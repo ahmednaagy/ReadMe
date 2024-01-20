@@ -9,31 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List(Library().sortedBooks, id: \.title) { book in
-            BookView(book: book)
+        NavigationStack {
+            List(Library().sortedBooks, id: \.title) { book in
+                BookRow(book: book)
+            }
+            .navigationTitle("Library")
         }
     }
 }
 
-struct BookView: View {
+struct BookRow: View {
     
     let book: Book
     
     var body: some View {
-        HStack {
-            Book.Image(title: book.title)
-            VStack(alignment: .leading) {
-                Text(book.title)
-                    .font(.title2)
-                Text(book.author)
-                    .font(.title3)
-                    .foregroundStyle(.secondary)
+        NavigationLink(destination: DetailView(book: book)) {
+            HStack {
+                Book.Image(title: book.title, size: 80 )
+                TitleAndAuthorStack(book: book, titleFont: .title3, authorFont: .title2)
+                    .lineLimit(1)
             }
-            .lineLimit(1)
-            .padding()
         }
     }
 }
+
 
 #Preview {
     ContentView()
