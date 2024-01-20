@@ -14,6 +14,7 @@
 		D0AEB2E82B4C2DC20084386E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AEB2E72B4C2DC20084386E /* Book.swift */; };
 		D0AEB2EB2B4C2F880084386E /* Book Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AEB2EA2B4C2F880084386E /* Book Views.swift */; };
 		D0AEB2ED2B4D947B0084386E /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AEB2EC2B4D947B0084386E /* Library.swift */; };
+		D0AEB30D2B517C230084386E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AEB30C2B517C230084386E /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D0AEB2E72B4C2DC20084386E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		D0AEB2EA2B4C2F880084386E /* Book Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book Views.swift"; sourceTree = "<group>"; };
 		D0AEB2EC2B4D947B0084386E /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		D0AEB30C2B517C230084386E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				D0AEB2DB2B4B05D10084386E /* ContentView.swift */,
 				D0AEB2EA2B4C2F880084386E /* Book Views.swift */,
+				D0AEB30C2B517C230084386E /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AEB2EB2B4C2F880084386E /* Book Views.swift in Sources */,
+				D0AEB30D2B517C230084386E /* DetailView.swift in Sources */,
 				D0AEB2DC2B4B05D10084386E /* ContentView.swift in Sources */,
 				D0AEB2ED2B4D947B0084386E /* Library.swift in Sources */,
 				D0AEB2DA2B4B05D10084386E /* ReadMeApp.swift in Sources */,
